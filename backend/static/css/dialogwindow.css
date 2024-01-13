@@ -1,0 +1,59 @@
+/* static/css/dialogwindow.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.chat-window {
+    max-width: 400px;
+    margin: auto;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 400px; /* Increase the minimum height */
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+#user-message {
+    flex-grow: 1;
+    margin-bottom: 10px; /* Add margin below the input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#user-input {
+    display: flex;
+    align-items: center; /* Align items horizontally */
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    margin-top: auto; /* Push the form to the bottom of the container */
+}
+
+#user-input img.send-icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px; /* Add some space between the input and the icon */
+}
+
+/* Close icon styles */
+.close-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+    

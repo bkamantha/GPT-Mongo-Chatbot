@@ -1,0 +1,48 @@
+<!-- dialogwindow.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dialogwindow.css') }}" />
+
+        <title>Chat Bot Window</title>
+    </head>
+    <body>
+        <div class="chat-window">
+            <div class="chat-header">
+                <img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios-filled/50/delete-sign--v1.png"
+                    alt="Close Icon"
+                    onclick="closeChatPopup()"
+                    class="action-icon"
+                />
+                <img
+                    width="20"
+                    height="20"
+                    src="https://img.icons8.com/ios-filled/50/000000/recurring-appointment.png"
+                    alt="Reset Icon"
+                    onclick="resetChat()"
+                    class="action-icon"
+                />
+            </div>
+            <div id="chat-history" class="chat-history">
+                <!-- Bot and user messages will be appended here -->
+            </div>
+            <div id="user-input">
+                <input type="text" id="user-message" placeholder="Type your message" />
+                <img
+                    src="https://img.icons8.com/color/48/sent--v2.png"
+                    alt="Send Icon"
+                    onclick="sendMessage()"
+                    class="send-icon"
+                />
+            </div>
+        </div>
+
+        <!-- Link the external JavaScript file -->
+        <script src="scripts/dialogwindow.js"></script>
+    </body>
+</html>

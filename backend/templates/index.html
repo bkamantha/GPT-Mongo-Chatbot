@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags, title, and stylesheets -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie Site</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+        <!-- Bootstrap CSS link -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyWP5Qf7ZBdFUtWfGddRTB"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- Page content -->
+        <div class="container">
+            <!-- Movie container for dynamically added movie cards -->
+            <div id="movieContainer" class="card-deck mt-4"></div>
+        </div>
+
+        <!-- Custom script -->
+        <script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
+
+        <!-- Chat icon -->
+        <div id="chatIcon" class="chat-icon">
+            <img width="50" height="50" src="static/images/chatbot-icon.gif" alt="message-bot" />
+        </div>
+
+        <!-- Chat popup -->
+        <div id="chatPopup" class="chat-popup">
+            <div class="chat-popup-content">
+                <!-- Content for your chat popup -->
+                <span class="close-icon" onclick="closeChatPopup()">&times;</span>
+            </div>
+        </div>
+    </body>
+</html>
